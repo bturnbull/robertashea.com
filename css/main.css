@@ -126,6 +126,27 @@ ul.posts span {
   border: 0;
 }
 
+.site .footer {
+  text-align: center;
+}
+
+.site .footer .nav li {
+  display: inline;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.site .footer .nav li a {
+  color: #aaa;
+  margin-left: 1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site .footer .nav li a:hover {
+  color: #000;
+}
+
 /*****************************************************************************/
 /*
 /* Posts
