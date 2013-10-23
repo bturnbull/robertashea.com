@@ -4,3 +4,7 @@
     max-width: 730px;
   }
 }
+
+blockquote {
+  border: 0px !important;
+}

@@ -3,11 +3,13 @@ layout: default
 title: Roberta Shea
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="row">
+  <div class="col-sm-8">
+    <img src="/media/paintings/p9_1400.jpg" class="img-responsive">
+  </div>
+  <div class="col-sm-4">
+    <blockquote class="pull-right">
+      <p class="text-right">&ldquo;God gave us eyes to see and art to speak to our souls.&rdquo;</p>
+    </blockquote>
+  </div>
 </div>
