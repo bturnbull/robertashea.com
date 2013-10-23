@@ -9,7 +9,7 @@ namespace :bootstrap do
   end
 
   desc 'Compile Bootstrap CSS and JavaScript'
-  task :generate => [:clean, 'css/bootstrap.css', 'js/bootstrap.js']
+  task :generate => [:clean, 'css/bootstrap.css', 'js/bootstrap.js', 'js/html5shiv.js', 'js/respond.min.js']
 
   file 'css/bootstrap.css' => '_bootstrap' do |t|
     compress = '--compress ' unless ENV['COMPRESS'] == 'NO'
@@ -19,6 +19,14 @@ namespace :bootstrap do
   file 'js/bootstrap.js' => '_bootstrap' do |t|
     compress = '--compress ' unless ENV['COMPRESS'] == 'NO'
     sh "uglifyjs _bootstrap/js/*.js #{compress}> #{t.name}"
+  end
+
+  file 'js/html5shiv.js' => '_bootstrap' do |t|
+    sh "cp _bootstrap/assets/#{t.name} #{t.name}"
+  end
+
+  file 'js/respond.min.js' => '_bootstrap' do |t|
+    sh "cp _bootstrap/assets/#{t.name} #{t.name}"
   end
 
   directory 'js/bootstrap'
@@ -32,6 +40,8 @@ namespace :bootstrap do
 
   task :clean_js do
     sh 'rm -f js/bootstrap.js'
+    sh 'rm -f js/html5shiv.js'
+    sh 'rm -f js/respond.min.js'
   end
 end
 
