@@ -1,1 +1,5 @@
 _site
+_bootstrap
+css/bootstrap.css
+js/bootstrap.js
+js/jquery.js

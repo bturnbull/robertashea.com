@@ -1,2 +1,7 @@
 name: Roberta Shea
-pygments: true
+pygments: false
+exclude:
+  - _bootstrap
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
