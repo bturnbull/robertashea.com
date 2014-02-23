@@ -18,8 +18,19 @@ blockquote {
   text-decoration: none;
 }
 
+.footer {
+  border-top: 1px solid #EEE;
+  text-align: center;
+  color: #999;
+}
+
+.footer .contact {
+  padding: 0 20px 0 20px;
+}
+
 .gallerynav {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .gallerynav a {
