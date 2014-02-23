@@ -1,5 +1,6 @@
 name: Roberta Shea
 pygments: false
+relative_permalinks: false
 exclude:
   - _bootstrap
   - Rakefile
