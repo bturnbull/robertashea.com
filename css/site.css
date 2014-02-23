@@ -8,3 +8,20 @@
 blockquote {
   border: 0px !important;
 }
+
+.page-header h1 a {
+  color: black;
+}
+
+.page-header h1 a:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.gallerynav {
+  text-align: center;
+}
+
+.gallerynav a {
+  padding: 0 20px 0 20px;
+}
