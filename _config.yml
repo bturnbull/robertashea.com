@@ -1,5 +1,5 @@
 name: Roberta Shea
-pygments: false
+highlighter: null
 relative_permalinks: false
 exclude:
   - _bootstrap
