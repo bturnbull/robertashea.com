@@ -19,6 +19,7 @@ blockquote {
 }
 
 .footer {
+  margin-top: 20px;
   border-top: 1px solid #EEE;
   text-align: center;
   color: #999;
