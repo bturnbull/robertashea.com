@@ -1,4 +1,3 @@
-
 namespace :bootstrap do
 
   desc 'Download Bootstrap v3.0.0 from Github into _bootstrap'
